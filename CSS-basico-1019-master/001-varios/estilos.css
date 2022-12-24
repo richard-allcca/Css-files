@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 1px solid;
+  margin: 8em 16em;
+}
+.texto {
+  /*? ajusta todo el texto en todo el contenedor */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/word-break */
+  word-break: break-all;
+}

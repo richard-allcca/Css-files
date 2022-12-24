@@ -1,0 +1,83 @@
+.cabezera h1{
+    text-align: center;
+}
+head nav section aside footer{
+    display: block;
+}
+.marco{
+    background-color: #00ffb8;
+    width: 920px;/* el ancho de el contenedor  */
+    border:2px solid black;/* para darle un borde como excel */
+    margin: auto;/* P/centrar en la pagina PUEDES darle 2 opciones la primera is top and under y la 2 para laterales(auto)*/
+    padding: 50px;/* P/para rellenar dentro de pagina todos los elementos como sec.nav.titulo osea todo dentro de pagina */
+    /* el atributo padding se usa para relleno dentro del margen y el margin es hacia afuera */
+}
+.navegacion{
+    background-color: #b6bacc;
+    padding: 15px;
+    text-align: left;
+    
+}
+.navegacion li{/* para dar estilo a LI dentro de la etiqueta nav */
+    display: inline;/* para alinear en horizontal */
+    
+}
+.seccion{
+    width: 500px;
+    text-align: center;
+    float: left;
+}
+.articulo1{
+    background-color: #75c2f0;
+    border: 1px solid black;
+    font-family: cursive;
+    padding: 10px;
+    margin-top: 70px;
+}
+.articulo2{
+    background-color: #75c2f0;
+    border: 1px solid black;
+    font-family: cursive;
+    padding: 10px;
+    margin-top: 70px;
+}
+.articulo1 h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.articulo2 h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+aside{
+    width: 300px;
+    
+    text-align: center;
+}
+.lateral{
+    background-color: #75c2f0;
+    border: 1px solid black;
+    float: right;
+    
+    margin-top: 70px;
+    margin-right: 20px;
+}
+.lateral img{
+    width: 150px;
+    border: 1px solid purple;
+}
+.pie{
+    text-align: center;
+    padding-top: 20px;
+    color: blue;
+    clear: both;
+}
+.lateral2{
+    background-color: #75c2f0;
+    border: 1px solid black;
+    float: right;
+    
+    margin-top: 20px;
+    margin-right: 20px;
+}
+footer{
+    padding-top: 15px;
+}

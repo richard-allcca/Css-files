@@ -1,0 +1,66 @@
+/* 1. Etiqueta <pre> */
+espacio {
+  white-space: pre-wrap;
+}
+/* 2. Evita selección de texto en pagina */
+selection {
+  user-select: none;
+}
+/* 3. Establece el grosor máximo de barra de desplazamiento de un elemento */
+scroll {
+  scrollbar-width: 10rem;
+}
+/* 4. Visualización de secciones lenta*/
+scroll {
+  scroll-behavior: smooth;
+}
+/* 5. Indica cual animación se ejecuta para mejorar rendimiento */
+animation {
+  will-change: nameAnimation;
+}
+/* 6. Footer siempre abajo(body) con grid */
+footer-bottom {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: auto 1fr auto;
+}
+/* 7. Contador  */
+contador {
+  counter-increment: nameContador;
+}
+contador::after {
+  content: counter(nameContador);
+}
+h1::selection {
+  background-color: #ffcc99;
+}
+/* color input */
+h1 {
+  caret-color: #ffcc99;
+}
+/* color links */
+a:link {
+  color: #ffcc99;
+}
+a:visited {
+  color: #ffcc99;
+}
+/* primera letra */
+p::first-letter {
+  font-family: mon;
+  margin: 2px;
+  color: #ffcc99;
+  font-size: 12px;
+}
+/* no mostrar imagenes en movil */
+@media only screen and (max-width: 629px) {
+  mi-img {
+    display: none;
+  }
+}
+/* 8. Dark o Light segun preferences */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --first-color: hsl(130, 100%, 63%);
+  }
+}

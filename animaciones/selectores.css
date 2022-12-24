@@ -1,0 +1,95 @@
+/* para declarar variables se usa root */
+:root {
+  --primerColor: black;
+  --segundoColor: blue;
+}
+
+.prueba {
+  background-color: #38fa2b;
+  width: 900px;
+  margin: auto;
+}
+body {
+  background-color: var(--primerColor);
+}
+.titulo {
+  color: var(--primerColor);
+}
+h2 {
+  color: var(--segundoColor);
+}
+
+/*? selectores hermano siguiente con el simbolo + (para etiqueta + clase)es opcional xk se puede solo usar el nombre de la clase*/
+.navegacion {
+  font: bold 14px verdana;
+  color: var(--primerColor);
+  text-align: center;
+}
+h2 + .subtitle {
+  color: var(--segundoColor);
+}
+
+/*? selector de hermanos siguientes (clase con subclase)*/
+.hermano-mayor > .hermanito {
+  background-color: orange;
+  color: blue;
+}
+
+/*? selectores decendientes (solo etiqueta)*/
+ul li ol {
+  color: red;
+}
+
+/*? selectores de hijo directo con (>) para crear menu desplegable con "hover" (solo para etiquetas) "importante */
+ul > li > ol {
+  display: none;
+}
+li:hover ol {
+  display: block;
+}
+
+/*? selector de atributo de la clase ademas se puede seleccionar el atributo sin un valor  */
+[type="email"] {
+  border-color: brown;
+}
+[type="submit"] {
+  background-color: aqua;
+  color: black;
+  border: none;
+  margin: 1em;
+}
+
+/*? selectores que empiezan con (href^) solo para paginas internas */
+[href^="/"] {
+  color: red;
+}
+
+/*? selectores que terminan con (href$) para paginas externas */
+[href$=".com"] {
+  color: green;
+  text-decoration: none;
+}
+
+/*? para selectores de atributo que contengan nombra la clase con (*) y luego su contenido */
+[class*="button-"] {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  margin: 1em;
+  padding: 1em 2em;
+}
+.button-cta {
+  background-color: orangered;
+}
+.button-alert {
+  background-color: red;
+}
+
+/*? Selector OWL buho y :not(:firstchild) */
+/* TODO OWL selector y :not() */
+.uno .dos:not(:last-child) {
+  border-right: 1px solid hsla(0, 10%, 50%, 0.5);
+}
+.uno * + * {
+  border-right: 1px solid hsla(0, 10%, 50%, 0.5);
+}

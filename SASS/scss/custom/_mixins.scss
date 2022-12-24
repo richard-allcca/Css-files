@@ -1,0 +1,6 @@
+@mixin caja-flex($main-axis, $cross-axis, $wrap) {
+  display: flex;
+  justify-content: $main-axis;
+  align-items: $cross-axis;
+  flex-wrap: $wrap;
+}

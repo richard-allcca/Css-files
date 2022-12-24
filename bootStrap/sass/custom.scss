@@ -1,0 +1,34 @@
+$font-family-sans-serif: "Barlow", sans-serif;
+
+@media screen and (min-width: 992px) {
+  .alto-100 {
+    height: 100vh;
+  }
+}
+//  tamaño de img
+.d-flex img {
+  width: 50px;
+}
+/* mi propio fondo */
+.fondo-card {
+  background-image: url(../assets/img/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 85% top;
+}
+
+// paleta personal
+$prymary: rgb(85, 239, 196);
+$success: rgb(129, 236, 236);
+$dark: rgb(116, 185, 255);
+$secondary: rgb(162, 155, 254);
+
+// contenido viewport
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";

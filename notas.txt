@@ -1,0 +1,26 @@
+**** Propiedad Flex ****
+
+/* 0 0 auto */
+flex: none;
+
+/* Tres valores: flex-grow | flex-shrink | flex-basis */
+  flex:           2           2            10%;
+
+/* Valores globales */
+flex: inherit;
+flex: initial;
+flex: unset;
+
+
+***user-select: none;***
+evita la seleccion de texto en pagina
+
+*** scrollbar-width***
+La propiedad scrollbar-width permite al autor establecer el grosor máximo de las barras de desplazamiento de un elemento cuando se muestran.
+
+***will-change: transform;***
+indica que animacion de ejecuta y mejora el rendimiento
+
+*** link CSS-TRICKS cursor ***
+https://css-tricks.com/almanac/properties/c/cursor/
+

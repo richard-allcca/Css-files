@@ -1,0 +1,43 @@
+/*
+* minmax():
+Recibe dos parámetros (valores) para establecer el mínimo y el máximo que pueden tener los items.
+grid-template-columns: repeat(2, minmax(100px, 1fr));
+
+*min-content
+min-content: mímimo necesario en función del contenido
+grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
+
+* max-content
+max-content: máximo necesario en función del contenido (se usa mas en imagenes o pie de pagina)
+grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
+
+auto-fit: Elimina los grid-items vacios que no se estén ocupando.
+si necesitan que los items salten pero aun asi ocupen el mismo espacio 
+
+auto-fill: Crea tantos grid-items vacios como quepan en el viewport respetando las medidas.
+si necesitan que los item mantengan el mismo tamaño pero puedan saltar si no caben
+*/
+
+body {
+  height: 100vh;
+  color: #eee;
+  font-family: sans-serif;
+  background-image: radial-gradient(circle, #b94bf8, #3a1957);
+  background-repeat: no-repeat;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.grid-item {
+  border: 0.5px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+}

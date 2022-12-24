@@ -1,0 +1,36 @@
+.contenedor {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.contenedor .uno {
+  background-color: rgb(230, 90, 25);
+  /* empieza en la linea x */
+  grid-column-start: 2;
+  /* termina en la linea x */
+  grid-column-end: 4;
+
+  /* si usas numero negativos empieza el conteo desde el final y siempre abarcara toda la  fila o columna*/
+  /* grid-column-start: 1;
+  grid-column-end: -1; */
+
+  /* grid-row-start: 2;
+  grid-row-end: 4; */
+
+  /* TODO abreviado SHORTHANDS */
+  grid-column: 2/4;
+  grid-row: 2/4;
+
+  /* TODO GRID AREA 
+  primer parametro: grid-row-start
+  segundo parametro: grid-column-end
+  tercer parametro: grid-row-end
+  cuarto parametro: grid-column-end
+  */
+  /* grid-area: 2/1/4/3; */
+
+  /* TODO SPAN  1° le indicas de donde empieza 2° hasta donde abarca*/
+  /* grid-column: 1 / span 3;
+  grid-row: 1 / span 3; */
+}

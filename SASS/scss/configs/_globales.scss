@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+html {
+  font-size: 10px;
+  // font-size: 62.5%px; son 10 px
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: "Noto Sans JP", Sans-serif;
+  // background: url("./assets/img/tensei_shitara.jpg");
+  background-color: hsl(0, 17%, 95%);
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: hsl(0, 1%, 52%);
+}
+img {
+  width: 90%;
+}
+.flex-item1 {
+  width: 90%;
+}
+nav,
+.servicios,
+.presentacion,
+.footer-content {
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+}
+
+.titulo-servicios,
+.presentacion,
+.servicios {
+  margin-bottom: 10%;
+}

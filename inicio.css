@@ -1,0 +1,32 @@
+:root {
+    --color: lime;
+}
+
+body{
+    background:var(--color);
+    margin: 10px;
+}
+h1{
+    background:white;
+    color: var(--color);
+    border: red solid 1px;
+}
+/* selectores universales */
+ul *{
+    color:red;
+    border: black solid 1px;
+    background-color: aliceblue;
+}
+/* selectores agrupados puedes seleccionar etiquetas o clases en diferentes lugares de tu codigo de esta forma */
+.prueba, .prueba2x {
+    color:orange;
+
+/* con esta forme de seleccionar puedes escojer elementos dentro de otros se llama selector descendiente */}
+ul li ol{
+    display: none;
+}
+
+ul li ol{
+    display: block;
+}/* no se puede crear una lista desplegable con este metodo de block */
+

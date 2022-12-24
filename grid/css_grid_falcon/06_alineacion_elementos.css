@@ -1,0 +1,16 @@
+.contenedor {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px);
+
+  /* start, center, end, auto y strench(100%)*/
+  justify-items: center;
+  align-items: center;
+}
+/* TODO alineacion de hijos */
+.contenedor .tres {
+  background-color: hsl(17, 84%, 52%);
+  justify-self: auto;
+  align-self: end;
+}

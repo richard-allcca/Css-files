@@ -1,0 +1,11 @@
+.contenedor {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+
+  /* horizontal start center end y space-X */
+  justify-content: space-evenly;
+
+  /* vertical tiene los mismos valores que horizontal solo recuerda que le puedes dar una medida exacta  "height */
+}

@@ -1,0 +1,51 @@
+/* 
+
+*Outline
+
+*outline-width
+    px|em|rem|%|....
+
+*outline-style
+    none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;
+
+    ? Estas medidas dependen del navegador
+    thick (ancho)
+    medium (medio)
+    thin (fino)
+        
+*outline-color
+    css native|rgb|rgba|hsl|hsla|hexadecimal|transparent
+
+outline-top-(width | style | color)
+outline-right-(width | style | color)
+outline-bottom-(width | style | color)
+outline-left-(width | style | color)
+
+*/
+
+[class*="box"] {
+  width: 90%;
+  margin: 2em auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  border: 1px solid orange;
+  outline: 1px solid orange;
+  outline-offset: -45px;
+}
+.img:hover {
+  border: 3px solid;
+  outline: 3px solid;
+  outline-offset: -45px;
+}
+
+.text {
+  position: absolute;
+  color: rgb(212, 201, 223);
+  font-size: 2.5em;
+  font-weight: bold;
+}

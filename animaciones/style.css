@@ -1,0 +1,92 @@
+:root {
+  --number: 1;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  /* align-content: center;
+  justify-content: center; */
+  --size: 100px;
+  border: 1px solid;
+  /* --number: 1; */
+}
+/*? asignacion de Animacion */
+.heart {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 40%;
+  left: 40%;
+  background-color: red;
+  transform: rotate(45deg);
+  /* animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; */
+}
+@keyframes move {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  25% {
+    top: 0%;
+    left: 100%;
+    /* scale: 1.2; */
+  }
+  50% {
+    top: 100%;
+    left: 100%;
+  }
+  75% {
+    top: 100%;
+    left: 0%;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+  }
+}
+/* ========================== */
+.heart::before {
+  content: " ";
+  display: block;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  margin-top: calc(var(--size) * -0.5);
+  border-radius: 50%;
+}
+.heart::after {
+  /*? reglas para ingresar números en content */
+  counter-reset: nameData var(--number);
+  content: counter(nameData);
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: red;
+  margin-top: calc(var(--size) * -0.5);
+  margin-left: calc(var(--size) * -0.5);
+}
+.delay1 {
+  animation-delay: 1s;
+  /* para darle números consecutivos solo modifica el valor de la variable */
+  --number: 2;
+}
+.delay2 {
+  animation-delay: 1.5s;
+  --number: 3;
+}

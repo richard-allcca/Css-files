@@ -1,0 +1,36 @@
+/* en el siguiente enlace */
+/* https://www.youtube.com/watch?v=QvEtN0HCUlw&t=8s */
+.contador {
+  height: 155px;
+  width: 320px;
+  /* transform: rotate(180deg); */
+  margin: 200px 100px;
+  position: relative;
+}
+
+.numero {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 12.5em;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #555;
+  position: absolute;
+  /* transform: rotate(-180deg); */
+  mix-blend-mode: screen;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.color_fondo {
+  border-right: 3px solid rgb(3, 5, 121); /* esto lo puse yo es opcional */
+  transition: 0.2s;
+  transform-origin: bottom;
+  position: absolute;
+  display: block;
+  bottom: 0%;
+  width: 100%;
+  background-color: rgb(3, 5, 121);
+}

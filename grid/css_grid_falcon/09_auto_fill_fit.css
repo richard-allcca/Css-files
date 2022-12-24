@@ -1,0 +1,11 @@
+.contenedor {
+  display: grid;
+  gap: 10px;
+  /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+  /* TODO estas caracteristicas se usan dentro de "repeat" */
+
+  /* hace que se rellene de forma automatica si no caben las pasa al siguiente nivel  */
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  /* hace que solo ocupe su espacio sin rellenar si tienen medida fija la respeta no rellena */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
